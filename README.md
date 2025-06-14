@@ -19,7 +19,7 @@
 
 3. Set the Turtlebot3 model in your `~/.bashrc`:
    ```bash
-    echo "export TURTLEBOT3_MODEL=waffle " >> ~/.bashrc && source ~/.bashrc
+   echo "export TURTLEBOT3_MODEL=waffle " >> ~/.bashrc && source ~/.bashrc
    ```
 
 4. Build and run (from the root directory of the project):
