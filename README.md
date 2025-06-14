@@ -11,27 +11,26 @@
    sudo ./install.sh
    ```
 
-2. Create a python virtual environment and install the required packages:
-   ```bash
-   ./setup.sh
-   ```
-
-3. Source the ROS and Gazebo setup files in your `~/.bashrc`:
+2. Source the ROS and Gazebo setup files in your `~/.bashrc`:
    ```bash
    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && source ~/.bashrc
    echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc && source ~/.bashrc
    ```
 
-4. Set the Turtlebot3 model in your `~/.bashrc`:
+3. Set the Turtlebot3 model in your `~/.bashrc`:
    ```bash
     echo "export TURTLEBOT3_MODEL=waffle " >> ~/.bashrc && source ~/.bashrc
    ```
 
-5. Build and run (from the root directory of the project):
+4. Build and run (from the root directory of the project):
    ```bash
+   python3 -m venv .venv
    source .venv/bin/activate
+   pip install -r requirements.txt
+
    cd ros_ws
    python3 -m colcon build
    source install/setup.sh
-   ros2 launch aws_robomaker_small_house_world small_house.launch.py gui:=true
+
+   ros2 launch aws_robomaker_small_house_world small_house.launch.py
    ```
