@@ -50,10 +50,5 @@ sudo apt-get install -y \
     ros-humble-tf-transformations \
     ros-humble-turtlebot3 \
     ros-humble-turtlebot3-gazebo \
-    ros-humble-turtlebot4-description \
-    ros-humble-turtlebot4-msgs \
-    ros-humble-turtlebot4-navigation \
-    ros-humble-turtlebot4-node \
-    ros-humble-turtlebot4-simulator
     
 rm -rf /var/lib/apt/lists/*
