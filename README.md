@@ -2,30 +2,30 @@
 
 # Requirements
 
-- Ubuntu 24.04 (Noble) [link](https://releases.ubuntu.com/noble/)
+- Ubuntu 22.04 (jammy) [link](https://releases.ubuntu.com/jammy/)
 
 # Setup
 
-1. Install Ros2 Jazzy following the instructions from the [official documentation](https://docs.ros.org/en/jazzy/Installation.html). After the installation run:
+1. Install Ros2 Humble, Gazebo and required dependencies:
    ```bash
-   echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc && source ~/.bashrc
+   sudo ./setup.sh
    ```
 
-2. Install Gazebo Harmonic following the instructions from the [official documentation](https://gazebosim.org/docs/harmonic/ros_installation/).
+2. Source the ROS and Gazebo setup files in your `~/.bashrc`:
    ```bash
-   sudo apt-get install ros-${ROS_DISTRO}-ros-gz
-   ```
-   ```bash
-   source ~/.bashrc
+   echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && source ~/.bashrc
+   echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc && source ~/.bashrc
    ```
 
-3. Create and activate a python virtual environment:
+4. Set the Turtlebot3 model in your `~/.bashrc`:
    ```bash
-   $ python3 -m venv .venv
-   $ source .venv/bin/activate
+    echo "export TURTLEBOT3_MODEL=waffle " >> ~/.bashrc && source ~/.bashrc
    ```
 
-4. Install the required python packages:
+5. Build:
    ```bash
-   pip install -r requirements.txt
+   cd ros_ws
+   colcon build
+   source install/setup.sh
+   ros2 launch aws_robomaker_small_house_world small_house.launch.py gui:=true
    ```
