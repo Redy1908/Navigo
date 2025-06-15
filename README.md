@@ -15,6 +15,7 @@
    ```bash
    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && source ~/.bashrc
    echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc && source ~/.bashrc
+   echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/<PATH-TO-NAVIGO>/ros_ws/src/litterbug/models"
    echo 'export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp' >> ~/.bashrc && source ~/.bashrc
    ```
 

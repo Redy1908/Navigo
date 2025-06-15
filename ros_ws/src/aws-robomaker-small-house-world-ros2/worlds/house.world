@@ -4144,7 +4144,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>/home/keith/projects/wpi-capstone/ros_ws/src/litterbug/models/bathtub/meshes/bathtub.dae</uri>
+              <uri>model://bathtub/meshes/bathtub.dae</uri>
             </mesh>
           </geometry>
           <material>
@@ -4236,7 +4236,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/keith/projects/wpi-capstone/ros_ws/src/litterbug/models/oven/meshes/oven.dae</uri>
+              <uri>model://oven/meshes/oven.dae</uri>
               <submesh>
                 <name>Oven</name>
                 <center>0</center>
@@ -4260,7 +4260,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/keith/projects/wpi-capstone/ros_ws/src/litterbug/models/oven/meshes/oven.dae</uri>
+              <uri>model://oven/meshes/oven.dae</uri>
               <submesh>
                 <name>Glass</name>
                 <center>0</center>
@@ -4349,7 +4349,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/keith/projects/wpi-capstone/ros_ws/src/litterbug/models/vanity/meshes/vanity.dae</uri>
+                <uri>model://vanity/meshes/vanity.dae</uri>
               <submesh>
                 <name>Wood</name>
                 <center>0</center>
@@ -4372,7 +4372,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/keith/projects/wpi-capstone/ros_ws/src/litterbug/models/vanity/meshes/vanity.dae</uri>
+                <uri>model://vanity/meshes/vanity.dae</uri>
               <submesh>
                 <name>Counter</name>
                 <center>0</center>
@@ -4395,7 +4395,7 @@
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/keith/projects/wpi-capstone/ros_ws/src/litterbug/models/vanity/meshes/vanity.dae</uri>
+                <uri>model://vanity/meshes/vanity.dae</uri>
               <submesh>
                 <name>Silver</name>
                 <center>0</center>
