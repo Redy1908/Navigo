@@ -50,5 +50,6 @@ sudo apt-get install -y \
     ros-humble-tf-transformations \
     ros-humble-turtlebot3 \
     ros-humble-turtlebot3-gazebo \
+    ros-humble-rmw-cyclonedds-cpp
     
 rm -rf /var/lib/apt/lists/*

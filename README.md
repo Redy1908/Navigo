@@ -15,6 +15,7 @@
    ```bash
    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc && source ~/.bashrc
    echo "source /usr/share/gazebo/setup.sh" >> ~/.bashrc && source ~/.bashrc
+   echo 'export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp' >> ~/.bashrc && source ~/.bashrc
    ```
 
 3. Set the Turtlebot3 model in your `~/.bashrc`:
