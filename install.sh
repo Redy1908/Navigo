@@ -45,11 +45,11 @@ sudo apt-get install -y \
     build-essential \
     ros-humble-ros-core \
     ros-humble-gazebo-ros-pkgs \
+    ros-humble-navigation2 \
     ros-humble-nav2-bringup \
     ros-humble-slam-toolbox \
     ros-humble-tf-transformations \
-    ros-humble-turtlebot3 \
-    ros-humble-turtlebot3-gazebo \
+    ros-humble-turtlebot3* \
     ros-humble-rmw-cyclonedds-cpp
     
 rm -rf /var/lib/apt/lists/*
