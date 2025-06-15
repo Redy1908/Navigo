@@ -23,15 +23,32 @@
    echo "export TURTLEBOT3_MODEL=waffle " >> ~/.bashrc && source ~/.bashrc
    ```
 
-4. Build and run (from the root directory of the project):
+4. Create and activate a Python virtual environment in the root directory of the project:
    ```bash
    python3 -m venv .venv
    source .venv/bin/activate
-   pip install -r requirements.txt
+   ```
 
+5. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+6. Build the ROS workspace:
+   ```bash
    cd ros_ws
    python3 -m colcon build
    source install/setup.sh
-
-   ros2 launch aws_robomaker_small_house_world small_house.launch.py
    ```
+
+# Mapping
+
+(Assuming all the previous steps have been completed)
+
+There is an already built map of the environment in the `ros_ws/src/aws-robomaker-small-house-world-ros2/maps` directory.
+
+If you want to create a new map:
+```bash
+cd ros_ws
+ros2 launch aws_robomaker_small_house_world house_mapping.launch.py 
+```
