@@ -63,7 +63,7 @@ ros2 launch aws_robomaker_small_house_world house_map.launch.py
 ```
 
 Then use the `2D Pose Estimate` tool to set the robot's initial position and orientation on the map.
-(Align thre green arerow to the robot's red arrow)
+(Align thre green arrow to the robot's red arrow)
 
 Then you can use the `2D Nav Goal` tool to set a goal position for the robot.
 
